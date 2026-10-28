@@ -30,7 +30,7 @@ git clone https://github.com/Songssx/ComfyUI-OpenH3-Regenerate2K.git
 示例工作流还使用以下节点：
 
 - [LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler](https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler)（必须）
-- [kijai/ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)（视频内嵌示例中的预览节点）
+- [kijai/ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)（完整示例工作流中的预览节点）
 
 安装后重启 ComfyUI。
 
@@ -108,7 +108,7 @@ Sharp curve branches 不是普通 LoRA，不能直接放进 `models/loras` 后�
 
 ### 示例工作流
 
-- [`example_workflows/Open_H3_Regenerate_2K_video_example.json`](example_workflows/Open_H3_Regenerate_2K_video_example.json)：从用户提供的 `Open_H3_Regenerate_2K_00009_.mp4` 内嵌元数据中原样提取的工作流。
+- [`example_workflows/Open_H3_Regenerate_2K_video_example.json`](example_workflows/Open_H3_Regenerate_2K_video_example.json)：完整的 1344×768 草稿生成、latent 放大、2560×1440 Open-H3 精修及音视频解码工作流。
 - [`example_workflows/Open_H3_Regenerate_2K_local.json`](example_workflows/Open_H3_Regenerate_2K_local.json)：较精简的本地测试工作流。
 
 视频示例包含额外的 DMAD、Singularity LoRA 和 KJNodes 预览节点；如果只测试 Open-H3 二阶段，可以删除或替换这些第一阶段节点。
