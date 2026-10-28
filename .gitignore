@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+*.safetensors
+*.mp4
+.DS_Store
